@@ -1,0 +1,22 @@
+// Calculo del area de un triangulo2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+
+void main ()
+{
+	float a,b,c,p,area;
+	cout<< "Escriba valor de la base ";
+	cin>>b;
+	cout<< "Escriba valor de la altura ";
+	cin>>a;
+	area=(a*b)/2;
+	cout<< "El Area es " <<area;
+	getch();
+}
