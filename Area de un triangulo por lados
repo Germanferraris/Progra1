@@ -22,7 +22,6 @@ void main ()
 	area= sqrt (p*(p-a)*(p-b)*(p-c));
 	cout<< "El Perimetro es " <<p;
 	cout<< " El Area es " <<area;
-	cout<< " La profe Karem es la mejor";
 	getch();
 }
 
