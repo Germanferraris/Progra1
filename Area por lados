@@ -1,0 +1,28 @@
+// Calculo del area de un triangulo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+
+void main ()
+{
+	float a,b,c,p,area;
+	cout<< "Escriba valor de a ";
+	cin>>a;
+	cout<< "Escriba valor de b ";
+	cin>>b;
+	cout<< "Escriba valor de c ";
+	cin>>c;
+	p=(a+b+c)/2;
+	area= sqrt (p*(p-a)*(p-b)*(p-c));
+	cout<< "El Perimetro es " <<p;
+	cout<< " El Area es " <<area;
+	cout<< " La profe Karem es la mejor";
+	getch();
+}
+
