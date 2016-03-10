@@ -1,0 +1,22 @@
+// Calcular un interes simple.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	int I,C,N,T;
+	cout<< "Ingrese Capital ";
+	cin>> C;
+	cout<< "Ingrese la Tasa de Interes ";
+	cin>> T;
+	cout<< "Ingrese periodo de tiempo ";
+	cin>> N;
+	I=C*T*N;
+	cout<< "EL interes simple a ganar es de " <<I;
+	getch();
+}
