@@ -1,0 +1,65 @@
+// Menu.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define IVA 0.13
+#define AFP 0.1271
+
+using namespace std;
+
+void main()
+{
+   int n, i, p=1, opcion;
+   float sb, sn, I, C, N, T;
+   cout << "\t Menu " ;
+   do {
+     cout << endl;
+     cout << "1.- Salarios" << endl;
+     cout << "2.- Calcular Interes" << endl;
+	 cout << "3.- Calcular un Factorial" << endl;
+	 cout << "0.- Salir" << endl;
+     cout << "Elige una opcion: " ;
+     cin >> opcion;
+     switch (opcion) {
+	    case 1:{ cout<< "Ingrese numero de empleados ";
+				cin>>n;
+				for (i=1;i<=n;i++)
+				{
+					cout<< "Ingrese el Salario Bruto ";
+					cin>> sb;
+					if (sb>=7000)
+						sn=sb-(IVA+AFP)*sb;
+					else
+						sn=sb-AFP*sb;
+					cout<< "El salario neto es: "<<sn <<endl;
+				}
+				getch(); break; }
+	    case 2: { cout<< "Ingrese Capital ";
+				cin>> C;
+				cout<< "Ingrese la Tasa de Interes ";
+				cin>> T;
+				cout<< "Ingrese periodo de tiempo en años ";
+				cin>> N;
+				I=C*T*N;
+				cout<< "EL interes simple a ganar es de " <<I;
+				getch(); break; }
+		case 3: { do{
+					cout<<"Ingrese un numero ";
+					cin>> n;
+					} while (n<0);
+					i=1;
+					while (i<=n)
+					{	
+						p=p*i;
+						i++;
+					}
+					cout<< "El factorial de "<< n <<" es: "<<p;
+					getch(); break;}   
+		case 0: cout << "Salir "; break;
+	    default: cout << "Opcion invalida" << endl;
+		}
+	 } while (opcion != 0);
+     getch();
+}
