@@ -1,0 +1,38 @@
+// Suma de un Numero.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	int n,x,a,b,c,d,e,f,g,h,i,j;
+	cout<<"Ingrese un numero hasta de 10 digitos "<<endl;
+	cin>> n;
+	cout<<"En caso de contener menos de 10 digitos complete con ceros "<< endl;
+	cout<<"Ingrese el primer digito "<<endl;
+	cin>> a;
+	cout<<"Ingrese el segundo digito "<<endl;
+	cin>> b;
+	cout<<"Ingrese el tercer digito "<<endl;
+	cin>> c;
+	cout<<"Ingrese el cuarto digito "<<endl;
+	cin>> d;
+	cout<<"Ingrese el quinto digito "<<endl;
+	cin>> e;
+	cout<<"Ingrese el sexto digito "<<endl;
+	cin>> f;
+	cout<<"Ingrese el septimo digito "<<endl;
+	cin>> g;
+	cout<<"Ingrese el octavo digito "<<endl;
+	cin>> h;
+	cout<<"Ingrese el noveno digito "<<endl;
+	cin>> i;
+	cout<<"Ingrese el decimo digito "<<endl;
+	cin>> j;
+	x=a+b+c+d+e+f+g+h+i+j;
+	cout<<"La suma de los digitos del numero "<<n<<" es: "<<x;
+	getch();
+}
