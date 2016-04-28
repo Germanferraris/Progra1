@@ -1,0 +1,23 @@
+// Par o Impar.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{
+	int n;
+	do
+		{
+		cout<<"Ingrese un numero ";
+		cin>> n;
+	}while (n<0);
+			if (n%2==0)
+				cout<< "El numero " <<n<< " es par "<< endl;
+			else
+				cout<< "El numero " <<n<< " es impar ";
+	getch ();
+}
+
+
