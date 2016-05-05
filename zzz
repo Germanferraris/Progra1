@@ -1,0 +1,27 @@
+// Salarios.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+
+void main ()
+
+{	
+	int n, i, h;
+	float c,s;
+	cout<< "Ingrese numero de empleados ";
+	cin>>n;
+	for (i=1;i<=n;i++)
+	{
+		cout<< "Ingrese el costo por hora ";
+		cin>> c;
+		cout<< "Ingrese el numero de horas ";
+		cin>>h;
+		s=c*h;
+		cout<< "El salario del trabajador es: "<<s<<endl;
+	}
+	getch();
+}
