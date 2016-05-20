@@ -1,0 +1,67 @@
+//Vectores.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+#define MAX 100
+
+using namespace std;
+
+void cargar (double a[], int tam);
+void burbuja (double a[], int tam);
+void mostrar (double a[], int tam);
+double promedio (double a[], int tam);
+
+
+void main ()
+{
+  int n;
+  double notas [MAX], prom;
+  do{
+        cout<< "Ingrese la cantidad de notas ";
+        cin>> n;
+  } while ((n<=0)||(n>100));
+        cargar (notas,n);
+        burbuja (notas,n);
+        mostrar (notas,n);
+        prom=promedio (notas,n);
+            cout <<"El promedio es "<<prom;
+getch();
+}
+
+void cargar (double a[], int tam)
+{
+    for (int i=0;i<tam;i++)
+    {
+        cout<< "V["<<i<<"]=";
+        cin>> a[i];
+    }
+}
+
+void burbuja (double a[], int tam)
+{
+    for (int i=0; i<tam-1; i++)
+        for (int j=i+1; j<tam; j++)
+            if (a[i]>a[j])
+            {
+                int temp= a [i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+}
+
+void mostrar (double a[], int tam)
+{
+    for (int i=0;i<tam;i++)
+        cout<<"V["<<i<<"]="<<a[i]<<end1;
+}
+
+double promedio (double a[],int tam)
+{
+    double suma=0;
+    for (int i=0;i<tam;i++)
+        suma=suma+a[i];
+    return (suma/tam);
+}
